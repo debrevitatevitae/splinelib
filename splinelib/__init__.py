@@ -5,7 +5,6 @@ Classes and functions for cubic splines determination."""
 
 # Standard library inputs
 from random import seed, random
-import sys
 from typing import (List, Tuple)
 
 # Third-party imports

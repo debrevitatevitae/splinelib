@@ -51,7 +51,7 @@ class CubicSpline(object):
             xout += "%10.3f" % (self.xlist[i])
             yout += "%10.3f" % (self.ylist[i])
             Mout += "%10.3f" % (self.Mlist[i])
-        return f"""Cubic spline. Length = %4d
+        return f"""Cubic spline. Length: %4d
         {xout}
         {yout}
         {Mout}""" % (len(self))

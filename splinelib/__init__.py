@@ -47,9 +47,9 @@ class CubicSpline(object):
         yout = "ylist: "
         Mout = "Mlist: "
         for i in range(len(self)):
-            xout += "%10.3f" % (self.xlist[i])
-            yout += "%10.3f" % (self.ylist[i])
-            Mout += "%10.3f" % (self.Mlist[i])
+            xout += "%10.5f" % (self.xlist[i])
+            yout += "%10.5f" % (self.ylist[i])
+            Mout += "%10.5f" % (self.Mlist[i])
         return f"""Cubic spline. Length: %4d
         {xout}
         {yout}

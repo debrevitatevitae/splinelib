@@ -14,9 +14,8 @@ import unittest
 import numpy as np
 
 # Local applications imports
-from splinelib import CubicSpline
-
-print(sys.path)
+from context import splinelib
+from splinelib import cubespline as csp
 
 
 class TestCubicSpline(unittest.TestCase):
@@ -28,7 +27,7 @@ class TestCubicSpline(unittest.TestCase):
         self.xvals = [rnd.random() for _ in range(5)]
         self.yvals = [rnd.random() for _ in range(5)]
         self.Mvals = [rnd.random() for _ in range(5)]
-        self.myspline = CubicSpline(self.xvals, self.yvals, self.Mvals)
+        self.myspline = csp.CubicSpline(self.xvals, self.yvals, self.Mvals)
         print(f"Executing {self._testMethodName}")
 
     def test_len(self):

@@ -15,7 +15,7 @@ import numpy as np
 
 # Local applications imports
 from context import splinelib
-from splinelib import cubespline as csp
+from splinelib import cspline as csp
 
 
 class TestCubicSpline(unittest.TestCase):
